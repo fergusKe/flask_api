@@ -19,7 +19,7 @@ class ChatBot(Resource):
         name = args['name']
         quation = args['quation']
         answer = {
-          'answer': name + 'your quation is' + quation + ', my answer is ...'
+          'answer': name + ', your quation is ' + quation + ', my answer is ...'
         }
         return answer, 200
 

@@ -8,7 +8,7 @@ def chatbot():
         name = request.values['name']
         quation = request.values['quation']
         answer = {
-          'answer': name + 'your quation is' + quation + ', my answer is ...'
+          'answer': name + ', your quation is ' + quation + ', my answer is ...'
         }
         return jsonify(answer), 200
     else:
